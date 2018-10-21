@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>音乐盒</title>
+<link rel="stylesheet" type="text/css" href="music.css">
+<script type="text/javascript" src="music.js"></script>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div id="outer_div">
+		<button onclick="showList();" id="list">列表</button>
+		<h3 id="titleName" style="height: 50px; word-break: break-all;">音乐盒子</h3>
+		<hr>
+		<button class="mybutton" onclick="thisOne();">单曲循环</button>
+		<button class="mybutton" onclick="nextOne();">下一首</button>
+		<button class="mybutton" onclick="preOne();">上一首</button>
+		<button class="mybutton" onclick="randomOne();">随机播放</button>
+		<audio src="/home/soft01/音乐/CloudMusic/96猫 - オレンジ.mp3" controls="controls" id="music" onended="nextOne();"style="position: relative; left: 1px;"></audio>
+		<div id="inner_div">
+			<span onclick="play(this);">96猫 - オレンジ.mp3</span><br> 
+			<span onclick="play(this);">A-Lin - 给我一个理由忘记.flac</span><br>
+			<span onclick="play(this);">Avril Lavigne - Innocence.flac</span><br>
+			<span onclick="play(this);">Alan Walker,Iselin Solheim -Faded.flac</span><br> 
+			<span onclick="play(this);">小緣 - 无心.mp3</span><br>
+			<span onclick="play(this);">平凡之路.mp3</span><br> 
+			<span onclick="play(this);">林志炫 - 离人.flac</span><br> 
+			<span onclick="play(this);">BAAD - 君が好きだと叫びたい.flac</span><br> 
+			<span onclick="play(this);">Jesse Campbell - If I Ain’t Got You(The Voice Performance).mp3</span><br>
+		</div>
+	</div>
+</body>
+</html>

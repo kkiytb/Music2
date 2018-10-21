@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<!--声明控制器组件  -->
+	<bean class="cn.kk.music.controller.LoginController"/>
+	<bean class="cn.kk.music.controller.MusicController"/>
+	<bean class="cn.kk.music.controller.UserController"/>
+<!-- 	<bean class="cn.kk.music.demo.DemoController"/> -->
+</beans>
